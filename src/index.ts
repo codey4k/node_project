@@ -1,7 +1,10 @@
+import ClassDecorator from './decorators/decorators'
+
 interface Persona {
     nombre:string;
 }
 
+@ClassDecorator
 class App implements Persona {
     
     nombre:string;
@@ -16,7 +19,9 @@ class App implements Persona {
     }
 }
 
-let persona = new App("Y4k")
+let persona = new App("Y4k");
 
-console.log(persona.getNombre())
+// console.log(persona.getNombre());
+
+persona.saludo();
 

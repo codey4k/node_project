@@ -1,4 +1,4 @@
-import ClassDecorator from './decorators/decorators'
+import ClassDecorator from './decorators/decorators.js'
 
 interface Persona {
     nombre:string;

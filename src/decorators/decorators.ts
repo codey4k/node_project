@@ -1,5 +1,5 @@
 export default function ClassDecorator(target:Function) {
-    target.prototype.saludo = function():void {
+    return target.prototype.saludo = function() {
         console.log('Hello ' + this.nombre);
     }
 }
